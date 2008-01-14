@@ -1,0 +1,64 @@
+ocaml-lame
+------------------------------------------
+OCaml bindings for the lame MP3 encoder library
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  libmp3lame0-3.97-1
+  ocaml-3.10.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ocaml-findlib-1.2.1-1
+
+Canonical website:
+  http://savonet.sourceforge.net/wiki/OCamlLibs
+
+Canonical download:
+  http://downloads.sourceforge.net/savnoet/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-lame-0.2.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-lame-0.2.1-X.cygport all
+
+This will create:
+  /usr/src/ocaml-lame-0.2.1-X-src.tar.bz2
+  /usr/src/ocaml-lame-0.2.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/lame/META
+  /usr/lib/ocaml/3.10/lame/lame.a
+  /usr/lib/ocaml/3.10/lame/lame.cma
+  /usr/lib/ocaml/3.10/lame/lame.cmi
+  /usr/lib/ocaml/3.10/lame/lame.cmxa
+  /usr/lib/ocaml/3.10/lame/lame.mli
+  /usr/lib/ocaml/3.10/lame/liblame_stubs.a
+  /usr/lib/ocaml/3.10/stublibs/dlllame_stubs.so
+  /usr/lib/ocaml/3.10/stublibs/dlllame_stubs.so.owner
+  /usr/share/doc/ocaml-lame-0.2.1/COPYING
+  /usr/share/doc/ocaml-lame-0.2.1/Changes
+  /usr/share/doc/ocaml-lame-0.2.1/README
+
+------------------
+
+Port Notes:
+
+----- version 0.2.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

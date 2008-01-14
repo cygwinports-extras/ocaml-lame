@@ -1,0 +1,4 @@
+category: OCaml Audio
+requires: cygwin libmp3lame0 ocaml
+sdesc: "OCaml lame bindings"
+ldesc: "OCaml bindings for the lame MP3 encoder library"
