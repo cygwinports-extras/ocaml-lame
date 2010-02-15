@@ -1,4 +1,4 @@
 category: OCaml Audio
-requires: libmp3lame0 libmp3lame-devel ocaml
+requires: libgcc1 libmp3lame0 libmp3lame-devel ocaml
 sdesc: "OCaml lame bindings"
 ldesc: "OCaml bindings for the lame MP3 encoder library"

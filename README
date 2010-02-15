@@ -3,17 +3,18 @@ ocaml-lame
 OCaml bindings for the lame MP3 encoder library
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libmp3lame0-3.98.2-1
-  ocaml-3.10.2-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libmp3lame0-3.98.2-10
+  ocaml-3.11.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  gcc4-core-4.3.4-3
   make-3.81-2
-  ocaml-findlib-1.2.2-1
+  ocaml-findlib-1.2.5-1
 
 Canonical website:
   http://savonet.sourceforge.net/wiki/OCamlLibs
@@ -24,43 +25,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-lame-0.2.3-X-src.tar.bz2
+  unpack ocaml-lame-0.2.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-lame-0.2.3-X.cygport all
+  cygport ./ocaml-lame-0.2.4-X.cygport all
 
 This will create:
-  /usr/src/ocaml-lame-0.2.3-X-src.tar.bz2
-  /usr/src/ocaml-lame-0.2.3-X.tar.bz2
+  /usr/src/ocaml-lame-0.2.4-X-src.tar.bz2
+  /usr/src/ocaml-lame-0.2.4-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/ocaml/3.10/lame/META
-  /usr/lib/ocaml/3.10/lame/lame.a
-  /usr/lib/ocaml/3.10/lame/lame.cma
-  /usr/lib/ocaml/3.10/lame/lame.cmi
-  /usr/lib/ocaml/3.10/lame/lame.cmx
-  /usr/lib/ocaml/3.10/lame/lame.cmxa
-  /usr/lib/ocaml/3.10/lame/lame.mli
-  /usr/lib/ocaml/3.10/lame/liblame_stubs.a
-  /usr/lib/ocaml/3.10/stublibs/dlllame_stubs.so
-  /usr/lib/ocaml/3.10/stublibs/dlllame_stubs.so.owner
-  /usr/share/doc/ocaml-lame-0.2.3/COPYING
-  /usr/share/doc/ocaml-lame-0.2.3/Changes
-  /usr/share/doc/ocaml-lame-0.2.3/README
-
-------------------
-
 Port Notes:
 
------ version 0.2.3-1 -----
-Version bump.
-
------ version 0.2.1-1 -----
-Initial release for Cygwin.
+----- version 0.2.4-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
