@@ -1,0 +1,18 @@
+inherit ocaml
+
+NAME="ocaml-lame"
+VERSION=0.3.1
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="OCaml LAME bindings"
+DESCRIPTION="OCaml bindings for the LAME MP3 encoder library"
+HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="0.2.4-cygwin17.patch"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
