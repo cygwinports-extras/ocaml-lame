@@ -1,13 +1,13 @@
 inherit ocaml
 
 NAME="ocaml-lame"
-VERSION=0.3.2
+VERSION=0.3.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OCaml LAME bindings"
 DESCRIPTION="OCaml bindings for the LAME MP3 encoder library"
-HOMEPAGE="http://savonet.sourceforge.net/"
-SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
+HOMEPAGE="http://liquidsoap.fm/"
+SRC_URI="https://github.com/savonet/${NAME}/releases/download/${VERSION}/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="0.2.4-cygwin17.patch"
 
 MAKEOPTS+="  ${ARCH_x86_64+OCAML_DYNLINK=byte-dyn}"
